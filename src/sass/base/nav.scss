@@ -1,0 +1,51 @@
+nav{
+
+  &.primary {
+    background-color: #222;
+    clear: both;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+
+      li {
+        float: left;
+        list-style: none;
+        margin: 0;
+        padding: 0;
+
+        a {
+          color: #fff;
+          display: block;
+          line-height: 1.75em;
+          padding: .5em 1em;
+          text-decoration: none;
+          text-transform: uppercase;
+
+          &:hover {
+            background-color: #555;
+            color: #fff;
+            text-decoration: none;
+          }
+
+        }
+
+      }
+
+      &.nav-right {
+        float: right;
+      }
+
+    }
+
+  }
+
+}
