@@ -14,6 +14,9 @@ const config = {
   module: {
     rules: [
       {
+        test: /\.json$/,
+        use: 'json-loader'
+      },{
         test: /\.(js|jsx)$/,
         use: 'babel-loader'
       },{

@@ -1,7 +1,7 @@
 nav{
 
   &.primary {
-    background-color: #222;
+    background-color: rgb(60, 90, 112);
     clear: both;
     margin: 0;
     overflow: hidden;
@@ -31,7 +31,7 @@ nav{
           text-transform: uppercase;
 
           &:hover {
-            background-color: #555;
+            background-color: #222;
             color: #fff;
             text-decoration: none;
           }

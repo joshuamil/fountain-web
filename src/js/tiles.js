@@ -37,9 +37,10 @@ class Tile extends React.Component {
             <article>
               <a href={"tag/" + tile.lang} className="category">{tile.lang}</a>
               <div className="information">
-                <h2>{tile.title}</h2>
-                <p>{tile.shortdesc}</p>
-                <a href={"items/" + tile.itemid}>More Information</a>
+                <a className="linkWrapper" href={"items/" + tile.itemid}>
+                  <h2>{tile.title}</h2>
+                  <p>{tile.shortdesc}</p>
+                </a>
               </div>
             </article>
           </section>

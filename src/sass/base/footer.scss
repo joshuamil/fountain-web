@@ -3,41 +3,46 @@ footer {
   color: #ccc;
   min-height: 200px;
   overflow: hidden;
-  padding: 1em;
+  padding: 0;
   width: 100%;
 
-  nav{
-    &.footer {
-      clear: both;
-      margin: .5em 0;
-      overflow: hidden;
+  .innerTube {
+    margin: 1%;
 
-      ul {
-        margin: 0;
+    nav{
+      &.footer {
+        clear: both;
+        margin: .5em 0;
         overflow: hidden;
-        padding: 0;
 
-        li {
-          border-right: 1px solid #ccc;
-          float: left;
-          list-style: none;
-          margin: 0 1em 0 0;
+        ul {
+          margin: 0;
+          overflow: hidden;
           padding: 0;
 
-          &:last-child {
-            border: 0;
-          }
+          li {
+            border-right: 1px solid #ccc;
+            float: left;
+            list-style: none;
+            margin: 0 1em 0 0;
+            padding: 0;
 
-          a {
-            color: #fff;
-            display: block;
-            padding: 0 1em 0 0;
-            text-decoration: none;
-
-            &:hover {
-              color: #fff;
-              text-decoration: underline;
+            &:last-child {
+              border: 0;
             }
+
+            a {
+              color: #fff;
+              display: block;
+              padding: 0 1em 0 0;
+              text-decoration: none;
+
+              &:hover {
+                color: #fff;
+                text-decoration: underline;
+              }
+            }
+
           }
 
         }
@@ -45,7 +50,7 @@ footer {
       }
 
     }
-
+  
   }
 
 }
