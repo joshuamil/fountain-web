@@ -1,0 +1,31 @@
+.search {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  top: 60px;
+  right: 1.5%;
+
+  input {
+    border-right: 0;
+    cursor: pointer;
+    float: left;
+    line-height: 2em;
+
+    &:focus,
+    &:hover {
+      border: 1px solid #ccc;
+      border-right: 0;
+      width: 400px;
+      outline-width: 0;
+      outline: none;
+    }
+
+  }
+
+  button {
+    border-left: 0;
+    background-color: #fff;
+    line-height: 2em;
+  }
+
+}

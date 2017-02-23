@@ -2,7 +2,7 @@ main {
 
   &.content {
     clear: both;
-    margin: 2em 1em;
+    margin: 2em 0 2em 1em;
     overflow: hidden;
 
     section {
@@ -58,7 +58,8 @@ main {
           }
 
           h2 {
-            font-weight: normal;
+            font-family: 'Open Sans Condensed', sans-serif;
+            font-weight: 300;
             margin: 0;
             padding: 0;
           }
@@ -85,4 +86,25 @@ main {
 
   }
 
+}
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    &.content {
+      section {
+        width: 98%;
+        &:first-child {
+          width: 98%;
+          article {
+            height: 400px;
+            margin-right: 0;
+          }
+        }
+        article {
+          margin-right: 0;
+        }
+      }
+    }
+  }
 }
