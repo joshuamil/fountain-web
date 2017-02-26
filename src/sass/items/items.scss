@@ -1,8 +1,8 @@
-main {
+section {
 
   &.content {
     clear: both;
-    margin: 2em 0 2em 1em;
+    margin: 0;
     overflow: hidden;
 
     section {
@@ -13,8 +13,12 @@ main {
       &:first-child {
         width: 66.666%;
         article {
-          margin: 1% 2% 1% 0;
-          height: 515px;
+          height: 502px;
+
+          h2 {
+            font-size: 2.5em;
+          }
+
         }
       }
 
@@ -23,7 +27,7 @@ main {
         background-position: center;
         background-image: url(../images/truck.jpg);
         background-size: cover;
-        margin: 2% 4% 2% 0;
+        margin: 0 2px 2px 0;
         height: 250px;
         position: relative;
 

@@ -29,3 +29,22 @@
   }
 
 }
+
+
+@media only screen and (max-width: 768px) {
+  .search {
+    top: 0;
+    left: 20px;
+    right: 20px;
+    position: relative;
+    margin: 1em auto;
+
+    input {
+      width: 80%;
+      &:focus,
+      &:hover {
+        width: 80%;
+      }
+    }
+  }
+}

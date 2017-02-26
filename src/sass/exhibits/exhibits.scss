@@ -1,0 +1,86 @@
+section {
+
+  &.content.exhibit {
+
+    section {
+      &:first-child {
+        width: 100%;
+        article {
+          height: 750px;
+          h2 {
+            font-size: 3em;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+            width: 75%;
+          }
+          p {
+            display: block;
+            font-size: 1.2em;
+            width: 70%;
+            text-shadow: 2px 2px 3px rgba(0, 0, 0, 1);
+          }
+        }
+      }
+
+      article {
+        background-image: url(../images/leader.jpg);
+
+        .information {
+          background-color: transparent;
+          color: #fff;
+          position: absolute;
+          top: 20%;
+          padding: 2%;
+
+          a {
+            color: #000;
+            cursor: pointer;
+            background-color: #fff;
+            opacity: .5;
+            display: block;
+            padding: 1em 2em;
+            text-align: center;
+            text-decoration: none;
+            width: 10%;
+            &:hover {
+              opacity: 1;
+            }
+          }
+
+        }
+
+      }
+
+    }
+
+  }
+
+  &.content.exhibit.quaternary {
+    section {
+      article {
+        background-image: url(../images/baldwin.jpeg);
+      }
+    }
+  }
+
+}
+
+
+@media only screen and (max-width: 768px) {
+  main {
+    &.content-secondary {
+      section {
+        width: 98%;
+        &:first-child {
+          width: 98%;
+          article {
+            height: 400px;
+            margin-right: 0;
+          }
+        }
+        article {
+          margin-right: 0;
+        }
+      }
+    }
+  }
+}
