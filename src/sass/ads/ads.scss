@@ -1,0 +1,66 @@
+.ad {
+  border: 0;
+  margin: 10px 0;
+  padding: 0;
+  text-align: center;
+
+  &.ad-300x250 {
+    max-width: 300px;
+    max-height: 250px;
+  }
+  &.ad-728x90 {
+    max-height: 250px;
+  }
+  &.ad-728x90 {
+    max-height: 90px;
+  }
+  &.ad-970x90 {
+    max-height: 90px;
+  }
+  &.ad-970x250 {
+    max-height: 250px;
+  }
+  &.ad-468x60 {
+    max-height: 60px;
+  }
+  &.ad-300x100 {
+    max-height: 100px;
+  }
+
+  iframe {
+    border: 0;
+    margin: 0 auto;
+    padding: 0;
+  }
+
+  .advert {
+    position: relative;
+    label {
+      color: #999;
+      font-size: .8em;
+      margin: .25em 0;
+      text-transform: uppercase;
+      position: absolute;
+      top: 40px;
+      left: -40px;
+      -webkit-transform: rotate(-90deg);
+         -moz-transform: rotate(-90deg);
+          -ms-transform: rotate(-90deg);
+           -o-transform: rotate(-90deg);
+              transform: rotate(-90deg);
+    }
+  }
+
+}
+
+.item {
+  .ad {
+    background-color: #222;
+    margin: 0 auto;
+    .advert {
+      label {
+        left: -60px;
+      }
+    }
+  }
+}

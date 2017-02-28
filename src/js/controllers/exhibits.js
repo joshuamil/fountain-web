@@ -34,7 +34,7 @@ class Exhibit extends React.Component {
       {this.state.data.map( (item, i) => {
         if((i+1) >= parseInt(this.props.start) && (i+1) <= parseInt(this.props.end)) {
           return (
-            <section key={i} className="exhibit">
+            <div key={i} className="exhibit">
               <article role="article">
                 <a href={"tag/" + item.lang} className="category">{item.lang}</a>
                 <div className="information">
@@ -43,7 +43,7 @@ class Exhibit extends React.Component {
                   <a href={"exhibits/" + item.exhibitid}>Discover More</a>
                 </div>
               </article>
-            </section>
+            </div>
           )
         }
       })}

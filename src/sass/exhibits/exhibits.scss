@@ -1,8 +1,9 @@
 section {
 
   &.content.exhibit {
+    margin: 0;
 
-    section {
+    div.exhibit {
       &:first-child {
         width: 100%;
         article {
@@ -23,7 +24,23 @@ section {
 
       article {
         background-image: url(../images/leader.jpg);
+        position: relative;
 
+        a.category {
+          background-color: #777;
+          color: #fff;
+          display: inline-block;;
+          font-size: .9em;
+          line-height: 2em;
+          padding: 0 1em;
+          text-decoration: none;
+          text-transform: capitalize;
+
+          &:hover {
+            background-color: rgb(60, 90, 112);
+          }
+
+        }
         .information {
           background-color: transparent;
           color: #fff;
@@ -55,7 +72,7 @@ section {
   }
 
   &.content.exhibit.quaternary {
-    section {
+    div.exhibit {
       article {
         background-image: url(../images/baldwin.jpeg);
       }
