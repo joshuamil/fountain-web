@@ -52,6 +52,14 @@ class Item extends React.Component {
     return (
       <div>
       {records.map( (item, i) => {
+
+        let style = {};
+        if (item.itemelements && item.itemelements.length > 0) {
+          style = {
+            backgroundImage: `url("${item.itemelements[0].mediaelement.mediasource}")`
+          };
+        }
+
         if (item.title === 'ad') {
           return (
             <div key={i} className="item">
@@ -64,7 +72,7 @@ class Item extends React.Component {
         } else {
           return (
             <div key={i} className="item">
-              <article role="article">
+              <article role="article" style={style}>
                 <a href={"tag/" + item.lang} className="category">{item.lang}</a>
                 <div className="information">
                   <a className="linkWrapper" href={"items/" + item.itemid}>
